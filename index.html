@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio丨邵为 Shao Wei</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- 引入外部样式表 -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">Hi, I'm SHAO WEI.</a>
+        
+        <!-- 汉堡菜单按钮 (仅小屏显示) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="nav-menu">
+            <a href="#works" class="nav-item" onclick="closeMenu()">设计作品</a>
+            <a href="#research" class="nav-item" onclick="closeMenu()">研究与荣誉</a>
+            <a href="#about" class="nav-item" onclick="closeMenu()">关于我</a>
+            <a href="./邵为13348684991_Resume.pdf" target="_blank" class="btn-download">Download CV</a>
+            <a href="./邵为13348684991_Portfolio.pdf" target="_blank" class="btn-download">Download Portfolio</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <!-- <div class="hero-image"> -->
+            <!-- <img src="/image/sw2.jpg" alt="Shao Wei"> -->
+        <!-- </div> -->
+        <h1 class="hero-title">
+            <span class="reveal-text"><span>Interaction Design</span></span>
+            <span class="reveal-text"><span>& Intelligent Media.</span></span>
+            <span class="hero-name"><span>邵为 / 数字媒体艺术 / 中国传媒大学</span></span>
+            <div class="hero-intro">
+                <p>专注于 AIGC、人机交互 (HCI) 与虚拟现实体验。<br>致力于探索"设计+技术"的双栖边界,构建有温度的数字化叙事。</p>
+            </div>
+        </h1>
+    </header>
+
+    <section id="works">
+        <div class="section-head">
+            <h2 class="section-title">Selected Works</h2>
+            <span class="section-sub">2022 - 2025</span>
+        </div>
+
+        <div class="works-grid">
+            <div class="work-card" onclick="openModal('project1')">
+                <div class="img-mask">
+                    <img src="https://picsum.photos/800/600?random=1" alt="梦华游">
+                </div>
+                <div class="work-info">
+                    <h3>梦华游 Return to Glory</h3>
+                    <p>VR 大空间交互体验 / Unity 开发</p>
+                    <div class="tags"><span class="tag">Interactive</span><span class="tag">Unity</span><span class="tag">HCII Award</span></div>
+                </div>
+            </div>
+            
+
+            <div class="work-card">
+                <div class="img-mask">
+                    <img src="https://picsum.photos/800/600?random=2" alt="鱼悦新语">
+                </div>
+                <div class="work-info">
+                    <h3>鱼悦新语 Fish Joy</h3>
+                    <p>AI 赋能艺术疗愈智能装置 / 挑战杯获奖作品</p>
+                    <div class="tags"><span class="tag">AIGC</span><span class="tag">Art Therapy</span><span class="tag">Hardware</span></div>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <div class="img-mask">
+                    <img src="https://picsum.photos/800/600?random=4" alt="佳能实习">
+                </div>
+                <div class="work-info">
+                    <h3>佳创空间 Smart Office</h3>
+                    <p>佳能创新科技实习项目 / B端产品体验升级</p>
+                    <div class="tags"><span class="tag">Internship</span><span class="tag">B-End</span><span class="tag">Figma</span></div>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <div class="img-mask">
+                    <img src="https://picsum.photos/800/800?random=3" alt="InnoPat">
+                </div>
+                <div class="work-info">
+                    <h3>InnoPat 智能专利申报平台</h3>
+                    <p>Web 端及小程序数据可视化与交互设计</p>
+                    <div class="tags"><span class="tag">UI/UX</span><span class="tag">Data Viz</span><span class="tag">Web</span></div>
+                </div>
+            </div>
+
+
+            <div class="work-card">
+                <div class="img-mask">
+                    <img src="https://picsum.photos/800/600?random=4" alt="佳能实习">
+                </div>
+                <div class="work-info">
+                    <h3>"音慰你"音乐心理疗愈平台</h3>
+                    <p>AIGC / 音频孪生技术</p>
+                    <div class="tags"><span class="tag">Internship</span><span class="tag">B-End</span><span class="tag">Figma</span></div>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <div class="img-mask">
+                    <img src="https://picsum.photos/800/600?random=4" alt="佳能实习">
+                </div>
+                <div class="work-info">
+                    <h3>幻梦 Wonderscape </h3>
+                    <p>AI青年艺术家邀请展入选AI短片 / Midjourney</p>
+                    <div class="tags"><span class="tag">Internship</span><span class="tag">B-End</span><span class="tag">Figma</span></div>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <div class="img-mask">
+                    <img src="https://picsum.photos/800/600?random=4" alt="佳能实习">
+                </div>
+                <div class="work-info">
+                    <h3>BOND 萌宠芳邻</h3>
+                    <p>棒棒科技实习项目 / C端小程序从0到1</p>
+                    <div class="tags"><span class="tag">Internship</span><span class="tag">B-End</span><span class="tag">Figma</span></div>
+                </div>
+            </div>
+
+            <div class="work-card">
+                <div class="img-mask">
+                    <img src="https://picsum.photos/800/600?random=4" alt="佳能实习">
+                </div>
+                <div class="work-info">
+                    <h3>其他作品概览</h3>
+                    <p>平面设计 / 自主创作</p>
+                    <div class="tags"><span class="tag">Internship</span><span class="tag">B-End</span><span class="tag">Figma</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="section-head">
+            <h2 class="section-title">Research & Honors</h2>
+            <span class="section-sub">Academic & Competitions</span>
+        </div>
+
+        <div class="research-list">
+            <div class="research-item">
+                <div class="r-year">2024.10</div>
+                <div class="r-content">
+                    <h4>AIGC 赋能青花纹样创作 / 纹艺复今</h4>
+                    <p>基于 Stable Diffusion 的图像生成与视频动态化研究,构建青花纹样训练数据集。作品入选"五棵松万达青年AI艺术家邀请展"。</p>
+                </div>
+                <div class="r-award">AI艺术季 二等奖</div>
+            </div>
+
+            <div class="research-item">
+                <div class="r-year">2024.08</div>
+                <div class="r-content">
+                    <h4>"挑战杯"首都大学生创业计划竞赛</h4>
+                    <p>项目:《孪生小鲎——新型云养殖交互游戏》。探索游戏化交互在生态保护中的应用。</p>
+                </div>
+                <div class="r-award">北京市 金奖</div>
+            </div>
+
+            <div class="research-item">
+                <div class="r-year">2025.08</div>
+                <div class="r-content">
+                    <h4>全国高校数字艺术设计大赛 (NCDA)</h4>
+                    <p>第13届未来设计师大赛,交互设计赛道作品《梦华游 Return to Glory》。</p>
+                </div>
+                <div class="r-award">北京赛区 三等奖</div>
+            </div>
+
+             <div class="research-item">
+                <div class="r-year">2024.09</div>
+                <div class="r-content">
+                    <h4>中国国际大学生创新大赛</h4>
+                    <p>项目:《InnoPat——数据无忧的智能专利申报护航者》。</p>
+                </div>
+                <div class="r-award">北京赛区 三等奖</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-layout">
+            <div class="profile-img">
+                <img src="/image/sw.jpg" alt="Shao Wei">
+            </div>
+            <div class="bio-text">
+                <div class="bio-text-container">
+                    <h2>Hi, I'm Shao Wei.</h2>
+                    <p>我是中国传媒大学数字媒体艺术专业的学生(GPA 3.84/4.0)。我不仅关注视觉美学,更热衷于通过代码与逻辑实现交互。</p>
+                    <p>在校期间,我独立完成了从"需求分析-交互设计-技术实现"的全流程闭环。曾在佳能创新科技实习,负责智慧办公平台的UI升级。我的研究兴趣在于 **AIGC 辅助设计**、**VR 沉浸式体验** 以及 **情感化交互**。</p>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-item">Figma / Sketch</span>
+                    <span class="skill-item">Unity / C#</span>
+                    <span class="skill-item">AIGC / Stable Diffusion</span>
+                    <span class="skill-item">HTML / CSS / JS</span>
+                    <span class="skill-item">After Effects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Email: 13348684991@163.com | Phone: 133-4868-4991</p>
+        <p>&copy; 2025 Shao Wei. All Rights Reserved.</p>
+    </footer>
+
+    <div id="project-modal" class="project-modal">
+        <div class="modal-nav">
+            <div class="logo">Return to Glory</div>
+            <div class="close-btn" onclick="closeModal()">✕ Close</div>
+        </div>
+        
+        <div class="detail-content">
+            <div class="detail-sticky">
+                <h1 class="detail-title">梦华游<br>Return to Glory</h1>
+                <div class="detail-meta">
+                    <p><strong>Role:</strong> 交互设计 & Unity 开发</p>
+                    <p><strong>Time:</strong> 2025.08</p>
+                    <p><strong>Tools:</strong> Unity, Blender, VR</p>
+                    <p><strong>Award:</strong> IAI Design Award 入围</p>
+                </div>
+                <div class="detail-desc">
+                    <p><strong>项目背景:</strong><br>这是一个VR大空间沉浸式体验项目。我们试图重现宋代文化的繁荣景象。</p>
+                    <br>
+                    <p><strong>我的职责:</strong><br>1. 主导交互逻辑设计,撰写体验流程。<br>2. 运用 Blender 进行场景建模优化。<br>3. 负责 Unity 核心开发,实现了多人联机环境下的手势识别与UI数据同步功能。</p>
+                    <br>
+                    <p>(此处可以放入更多关于交互逻辑的深入思考文字,因为左侧固定,右侧滚动,阅读体验极佳。)</p>
+                </div>
+            </div>
+
+            <div class="detail-gallery">
+                <img src="https://picsum.photos/1200/800?random=10" alt="Detail 1">
+                <img src="https://picsum.photos/1200/800?random=11" alt="Detail 2">
+                <p style="text-align: center; color: #888; margin: 20px 0;">交互流程图展示</p>
+                <img src="https://picsum.photos/1200/1600?random=12" alt="Process">
+                <img src="https://picsum.photos/1200/800?random=13" alt="Final Render">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // 汉堡菜单控制
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            
+            // 防止背景滚动
+            if (menu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        function closeMenu() {
+            const menu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            menu.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // 1. 首页文字入场
+        gsap.to('.reveal-text span', {
+            y: 0,
+            duration: 1.2,
+            ease: "power4.out",
+            stagger: 0.2
+        });
+        
+        gsap.to('.hero-intro', {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            delay: 0.8
+        });
+
+        // 2. 作品列表渐入
+        gsap.utils.toArray('.work-card').forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: { trigger: card, start: "top 90%" },
+                y: 50, opacity: 0, duration: 1, ease: "power3.out", delay: i * 0.1
+            });
+        });
+
+        // 3. 研究列表滑入
+        gsap.utils.toArray('.research-item').forEach((item, i) => {
+            gsap.from(item, {
+                scrollTrigger: { trigger: item, start: "top 95%" },
+                x: -30, opacity: 0, duration: 0.8, ease: "power2.out", delay: i * 0.1
+            });
+        });
+
+        // 4. 详情页开关逻辑
+        function openModal(projectId) {
+            document.getElementById('project-modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('project-modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
