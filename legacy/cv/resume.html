@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邵为 Shao Wei - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --text-main: #000;
+            --text-sub: #333;
+            --text-light: #666;
+            --border: #ccc;
+            --font-serif: 'Noto Serif SC', serif;
+            --font-sans: 'Inter', sans-serif;
+            --page-padding: 25px 30px; /* Tight padding for A4 */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #fff;
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            font-size: 12px; /* Optimized for single page */
+            line-height: 1.45;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* A4 Container Setup */
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: var(--page-padding);
+            margin: 0 auto;
+            background: white;
+            position: relative;
+        }
+
+        /* --- Typography --- */
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #000;
+        }
+
+        .job-title { font-size: 12px; font-weight: 400; color: var(--text-light); }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 14px;
+            font-weight: 700;
+            border-bottom: 1px solid var(--text-main);
+            margin-top: 12px;
+            margin-bottom: 8px;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        p, li { text-align: justify; color: var(--text-sub); }
+        
+        a { color: inherit; text-decoration: none; }
+
+        /* --- Components --- */
+        
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #000;
+            padding-bottom: 10px;
+        }
+        .contact-info {
+            text-align: right;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        /* Lists & Items */
+        .section-item { margin-bottom: 8px; }
+        .section-item:last-child { margin-bottom: 0; }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+        
+        .item-sub {
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 11px;
+            margin-bottom: 2px;
+        }
+
+        .date { font-family: 'Inter', monospace; font-size: 11px; font-weight: 500; }
+
+        ul { list-style: none; margin-top: 2px; }
+        li {
+            position: relative;
+            padding-left: 10px;
+            margin-bottom: 1px;
+        }
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 10px;
+            color: var(--text-light);
+        }
+
+        /* Skills Tags */
+        .skills-row {
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+        .skill-label { font-weight: 700; font-size: 12px; width: 80px; flex-shrink: 0; }
+        .skill-list { display: flex; flex-wrap: wrap; gap: 4px; }
+        .tag {
+            border: 1px solid #ddd;
+            padding: 0 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            color: #444;
+        }
+
+        /* Award Block Compact */
+        .award-group { margin-bottom: 8px; }
+        .award-line { display: flex; justify-content: space-between; font-weight: 600; font-size: 12px; }
+        .award-sub { font-size: 11px; color: #555; margin-bottom: 2px; }
+        .project-desc { 
+            background: #f7f7f7; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            margin-top: 2px; 
+        }
+        .project-title { font-weight: 700; font-size: 11px; color: #000; }
+
+        /* Print Settings */
+        @media print {
+            body { background: white; }
+            .page { margin: 0; padding: 25px 30px; width: 100%; box-shadow: none; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    
+    <!-- HEADER -->
+    <header>
+        <div style="display: flex;flex-direction: row;gap: 10px;justify-content: flex-end;align-items: flex-end;">
+            <div>
+                <img style="width: 50px; border-radius: 2px;" src="/image/sw.jpg" alt="">
+            </div>
+            <div>
+                <h1>邵为 Shao Wei</h1>
+                <div class="job-title">数字媒体艺术 / 交互设计 / AIGC</div>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <div>13348684991@163.com | (+86) 133-4868-4991</div>
+            <div>中国传媒大学 | 北京</div>
+        </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section>
+        <p style="font-size: 11px; line-height: 1.4;">
+            兼具“设计+技术”双栈能力、专注于 AIGC 与用户体验设计实践。我能独立完成“需求分析—交互设计—技术实现—效果验证”全流程，熟练使用多种设计工具与开发平台，具备从交互原型到产品落地的闭环能力。在团队协作中，我注重倾听需求、以解决方案为导向，曾主导或参与多个跨学科项目，具备良好的协作意识和成果落地经验。
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>教育信息</h2>
+        <div class="item-header">
+            <h3>中国传媒大学 <span style="font-weight:400; font-size: 12px; margin-left: 10px;">数字媒体艺术（网络与智能媒体设计方向）</span></h3>
+            <span class="date">2022.9 - 至今</span>
+        </div>
+        <div style="font-size: 11px; margin-top: -2px;">GPA: 3.84/4.00 | 英语：四六级</div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>技能</h2>
+        <div class="skills-row">
+            <span class="skill-label">设计与交互</span>
+            <div class="skill-list">
+                <span class="tag">Figma</span><span class="tag">PS</span><span class="tag">AI</span><span class="tag">After Effects</span><span class="tag">交互体验与动效设计</span>
+            </div>
+        </div>
+        <div class="skills-row" style="margin-bottom: 0;">
+            <span class="skill-label">开发与 3D</span>
+            <div class="skill-list">
+                <span class="tag">HTML</span><span class="tag">Unity</span><span class="tag">Unreal Engine</span><span class="tag">Blender</span><span class="tag">C4D</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERNSHIP -->
+    <section>
+        <h2>实习经历</h2>
+        <div class="section-item">
+            <div class="item-header">
+                <h3>佳能创新（北京）科技有限公司 <span style="font-weight: 400; font-size: 12px; color: #555;">| UI 设计实习生</span></h3>
+            </div>
+            <ul>
+                <li>负责“佳创空间”智慧办公平台的交互优化与 UI 升级，围绕“界面复杂、操作路径长”等痛点，设计组件化界面与智能搜索功能，完成产业级交互方案落地，提升企业员工办公效率。</li>
+                <li>独立完成 RBS、FRS、VMS 三大核心模块的多端可交互原型设计与 UI 迭代优化。</li>
+                <li>主导 SWS 产品官网与 CIS 公司门户网站的设计规范制定与用户体验设计，推动品牌视觉统一与体验升级。</li>
+                <li>负责 SWS 品牌 VI 创新设计方案，从交互逻辑到视觉体系实现整体体验提升。</li>
+            </ul>
+        </div>
+        <div class="section-item">
+            <div class="item-header">
+                <h3>天津棒棒科技有限公司 <span style="font-weight: 400; font-size: 11px; color: #555;">| 用户体验设计师</span></h3>
+                <span class="date">2025.7 - 2025.11</span>
+            </div>
+            <div class="item-sub">产品：BOND 萌宠芳邻（宠物友好社区小程序 & Web 管理后台）</div>
+            <ul>
+                <li><strong>C端小程序从0到1：</strong> 独立负责产品 UI/UX 设计与实现。梳理用户体验架构，建立宠物地图与社区互动功能，确立视觉风格并输出高保真界面，保障产品如期上线。</li>
+                <li><strong>B端后台重构：</strong> 负责 Web 端管理后台的交互架构梳理。针对运营痛点优化信息结构与操作流程，大幅提升后台配置效率与易用性。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section>
+        <h2>科研经历</h2>
+        <div class="section-item">
+            <div class="item-header">
+                <h3>青心未来 XingLab <span style="font-weight: 400; font-size: 12px; color: #555;">| AIGC 赋能青花纹样创作</span></h3>
+                <span class="date">2024 - 2025</span>
+            </div>
+            <ul>
+                <li>搭建“AI 生图+动态视频生成”技术流程，完成 200+ 青花纹样图片的收集、标注与预处理，构建高质量训练数据集。</li>
+                <li>负责展览内容视频剪辑与调色，并运营“青花未来 XingLab”社交媒体账号，主导宣传推送与选题策划。</li>
+                <li>项目获第十二届东升杯国际创业大赛（大学生专场）二等奖，入选“五棵松万达青年 AI 艺术家邀请展”，获 AI 艺术季提名。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- AWARDS & PROJECTS (Condensed) -->
+    <section>
+        <h2>奖项与项目实践</h2>
+        
+        <!-- Group 1 -->
+        <div class="award-group">
+            <div class="award-line">
+                <span>“挑战杯”首都大学生创业计划竞赛 北京市金奖</span>
+                <span class="date">2024.6 - 2025.7</span>
+            </div>
+            <div class="award-sub">第十四届“桃战杯”秦创原中国大学生创业计划竞赛 全国总决赛三等奖 / 中国国际大学生创新大赛北京赛区 三等奖</div>
+            <div class="project-desc">
+                <span class="project-title">项目：《孪生小鲎》、《InnoPat（智能专利申报平台）》、《音韵智谷》</span>
+                <ul>
+                    <li>在以上项目中，我担任<strong>交互设计职责</strong>，负责交互架构设计，梳理用户操作流程与信息结构。</li>
+                    <li>完成 Web 端及移动端高保真 UI 界面设计与实现，提升用户体验，最终推动项目落地。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class="award-group">
+            <div class="award-line">
+                <span>第 19 届中国好创意暨全国数字艺术设计大赛 北京赛区 一等奖</span>
+                <span class="date">2025.8</span>
+            </div>
+            <div class="award-sub">第十八届 IAI 全球设计奖 (IAI Design Award) 春季赛 入围奖</div>
+            <div class="project-desc">
+                <span class="project-title">项目：《梦华游 Return to Glory》VR 大空间项目 (Unity/VR)</span>
+                <ul>
+                    <li><strong>交互设计与开发：</strong>进行调研总结同类项目特点，分析用户需求，输出可复用的 Unity VR 开发方法。</li>
+                    <li><strong>主导交互逻辑与建模：</strong>撰写交互流程；运用 Blender 建模并完成 Unity 场景搭建。</li>
+                    <li><strong>开发实现：</strong>实现多人联机环境下的手势识别与 UI 数据同步功能；负责主视觉海报等宣传物料制作。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class="award-group">
+            <div class="award-line">
+                <span>“挑战杯” 首都大学生课外学术作品竞赛 人工智能+ 创意赛 二等奖</span>
+                <span class="date">2025.7</span>
+            </div>
+            <div class="project-desc">
+                <span class="project-title">项目：《“鱼悦新语”——AI 赋能的艺术疗愈智能交互鱼缸》</span>
+                <ul>
+                    <li>担任<strong>交互设计与前端开发</strong>。基于艺术疗愈需求负责整体视觉交互设计与前端实现，配合团队完成系统集成。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Other Awards List -->
+        <div style="margin-top: 6px;">
+            <div class="item-header" style="font-size: 11px;">
+                <span>第 12 届未来设计师·全国高校数字艺术设计大赛 二等奖</span>
+                <span class="date">2024.8</span>
+            </div>
+            <div class="item-header" style="font-size: 11px;">
+                <span>第 13 届未来设计师·全国高校数字艺术设计大赛 三等奖</span>
+                <span class="date">2025.8</span>
+            </div>
+            <div class="item-header" style="font-size: 11px;">
+                <span>中国国际大学生创新大赛北京赛区 三等奖</span>
+                <span class="date">2024.9</span>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
